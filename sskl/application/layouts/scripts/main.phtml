@@ -1,0 +1,25 @@
+<?php echo $this->doctype() ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <?php echo $this->headTitle() ?>
+  <?php echo $this->headLink() ?>
+</head>
+<body>
+<section>
+    <header>
+        <nav>
+            <a href="<?php echo $this->url( array('controller'=>'index', 'action'=>'index'), 'default', true ) ?>">Home</a>
+            <a href="<?php echo $this->url( array('controller'=>'user', 'action'=>'login'), 'default', true ) ?>">Login</a>
+            <a href="<?php echo $this->url( array('controller'=>'user', 'action'=>'signup'), 'default', true ) ?>">Sign Up</a>
+        </nav>
+    </header>
+    <section>
+    <?php echo $this->layout()->content ?>
+    </section>
+    <footer>
+        User process.
+    </footer>
+</section>
+</body>
+</html>
